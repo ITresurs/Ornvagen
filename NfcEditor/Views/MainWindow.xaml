@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Ornvagen" x:Name="window" x:Class="Ornvagen.Views.MainWindow"
+        Title="MittFönster" Height="350" Width="525" WindowState="Maximized" Visibility="Visible" Icon="/Ornvagen;component/orn.ico" BorderThickness="0" BorderBrush="#FFD60C0C">
+    <Grid x:Name="HELLOHELLO_" Margin="0,0,0,46">
+        <Grid x:Name="OLLAOLLA_" Margin="0,273,0,-46">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Dölj knappar" Margin="268,0,99,6" Height="30" VerticalAlignment="Bottom" ToolTip="Klicka för att se" Click="Other_Button_Click"  Width="150" FontSize="18" Background="#FFDFFFC0" BorderBrush="{x:Null}" Foreground="#FF123F8F" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Grid.ColumnSpan="2"/>
+            <Button x:Name="knapp" Content="Spara" Margin="101,0,266,6" Click="Button_Click" ToolTip="Klicka för att se" Height="30" VerticalAlignment="Bottom" Width="150" FontSize="18" Background="#FFDFFFC0" BorderBrush="{x:Null}" Foreground="#FF123F8F" Grid.ColumnSpan="2" IsEnabled="False"/>
+        </Grid>
+        <WebBrowser x:Name="webBrowser" Source="http://accessyoutube.org.uk" Navigated="webbLoaded" />
+    </Grid>
+</Window>
